@@ -56,9 +56,24 @@ open "https://noeai.circle.so/c/claude-code-course#lesson-3450389"
 
 ## Introduction (say this AFTER the video opens)
 
-Say:
+Output this EXACTLY (with all formatting):
 
-**Lesson 1 — Personal AI Business Automator.** 🧠
+```
+═══════════════════════════════════════════════════════════════
+
+  ███╗   ██╗ ██████╗ ███████╗ █████╗ ██╗
+  ████╗  ██║██╔═══██╗██╔════╝██╔══██╗██║
+  ██╔██╗ ██║██║   ██║█████╗  ███████║██║
+  ██║╚██╗██║██║   ██║██╔══╝  ██╔══██║██║
+  ██║ ╚████║╚██████╔╝██████╗██║  ██║██║
+  ╚═╝  ╚═══╝ ╚═════╝ ╚═════╝╚═╝  ╚═╝╚═╝
+
+  🔥 LESSON 1: PERSONAL AI BUSINESS AUTOMATOR 🔥
+
+═══════════════════════════════════════════════════════════════
+```
+
+Then say:
 
 I just opened the video walkthrough in your browser.
 
@@ -73,21 +88,21 @@ I'll always give you a heads up before one comes.
 Then output:
 
 ```
-╔══════════════════════════════════════════╗
-║                                          ║
-║   LESSON 1: Personal AI Business         ║
-║   Automator                              ║
-║                                          ║
-║   Time:  ~10 minutes                     ║
-║   Goal:  Claude knows YOUR business      ║
-║   Win:   Personalized AI, not slop       ║
-║                                          ║
-║   PROGRESS: ░░░░░░░░░░░░░░░░ 0/2 steps  ║
-║                                          ║
-╚══════════════════════════════════════════╝
-```
+  ┌─────────────────────────────────────────────┐
+  │                                             │
+  │  📍 LESSON 1: Personal AI Business          │
+  │     Automator                               │
+  │                                             │
+  │  ⏱️  ~10 minutes                             │
+  │  🎯 Goal: Claude knows YOUR business        │
+  │  🏆 Win: Personalized AI, not slop          │
+  │                                             │
+  │  PROGRESS: ░░░░░░░░░░░░░░░░░░░░ 0/2 steps  │
+  │                                             │
+  └─────────────────────────────────────────────┘
 
-⚡ **STEP 1 →** Build your CLAUDE.md (the magic part)
+  ⚡ STEP 1 → Build your CLAUDE.md (the magic part)
+```
 
 Then say:
 
@@ -254,6 +269,8 @@ Then output the completion card:
 ╚══════════════════════════════════════════╝
 ```
 
+PROGRESS: ███░░░░░░░░░░░░░░░░░ 1/6 lessons
+
 🎓🏆
 
 
@@ -297,9 +314,11 @@ Say:
 
 And here's the thing — every single one of these will give you **personalized results** because of the CLAUDE.md you just built.
 
-Try one right now if you want. Just copy-paste any prompt from that file and watch what happens. 😏
+Want to peek at them right now? Just type this:
 
-Or save them for later — they're not going anywhere.
+`open ~/.noeai/gifts/30-prompts-that-print-money.md`
+
+Or save them for later — they're not going anywhere. 😏
 
 
 ## Wrap Up
