@@ -321,7 +321,7 @@ Each one spawns multiple agents that work simultaneously. **Paste the recipe, fi
 
 The Content Blitz alone is worth it — one topic, 5 pieces of content, all at once. **Run that every week and your content is done.** 😏
 
-Want to peek at them? Type: `open ~/.noeai/gifts/5-agent-workflows.md`
+Want to see them? Just say **"show me the agent workflows"** and I'll pull them up right here.
 
 
 Then output:
