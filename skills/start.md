@@ -72,7 +72,7 @@ Then output:
 ║                  Multiple Claudes working in parallel      ║
 ║                                                           ║
 ║   Lesson 5  🏗️   Build Something Real                      ║
-║                  A real web page for YOUR business         ║
+║                  Claude builds YOUR dream project          ║
 ║                                                           ║
 ║   Lesson 6  🏆  The Full System                           ║
 ║                  Everything connects. Victory lap.        ║
@@ -86,7 +86,7 @@ Then say:
 
 - ✅ A personalized AI that knows YOUR business
 - ✅ Custom skills you built yourself
-- ✅ A real web page opened in your browser
+- ✅ A real project built and opened in your browser
 - ✅ An AI team that works in parallel
 - 🎁 **4 gifts** unlocked along the way (prompts, workflows, templates, cheat sheet)
 
