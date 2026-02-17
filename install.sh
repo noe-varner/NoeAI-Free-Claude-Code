@@ -93,8 +93,9 @@ echo "  Free course + community: https://noeai.circle.so"
 echo "  Follow @noevarner.ai for daily AI tutorials"
 echo "  ─────────────────────────────────────────────"
 echo ""
-echo "  🚀 Launching Claude Code..."
-echo "     When it opens, type:  /noeai:lesson-1"
+echo "  ✅ Ready! Now just type:"
 echo ""
-sleep 2
-exec claude < /dev/tty
+echo "    claude"
+echo ""
+echo "  Then type:  /noeai:lesson-1"
+echo ""
