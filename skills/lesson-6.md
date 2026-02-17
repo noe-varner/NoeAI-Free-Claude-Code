@@ -82,7 +82,7 @@ Then output:
 ║                                                           ║
 ║   Lesson 3: Connect Your Apps (MCP)                       ║
 ║   ✅ Live research demo with YOUR tools                    ║
-║   ✅ /mcp-builder unlocked                                 ║
+║   🎁 Gift: /mcp-builder (connect any app)                 ║
 ║                                                           ║
 ║   Lesson 4: Your AI Team of Agents                        ║
 ║   ✅ Commanded a team of agents in parallel                ║
@@ -97,7 +97,7 @@ Then output:
 
 Say:
 
-**5 lessons. 4 gifts. Real skills. Real output. Real systems built for YOUR business.**
+**5 lessons. 5 gifts. Real skills. Real output. Real systems built for YOUR business.**
 
 Most people are copy-pasting into ChatGPT and getting the same response as everyone else.
 
@@ -199,7 +199,7 @@ Then output:
 ║   🏆 COURSE COMPLETE!                                     ║
 ║                                                           ║
 ║   ✅ 6 lessons completed                                   ║
-║   ✅ 4 gifts unlocked                                      ║
+║   ✅ 6 gifts unlocked                                      ║
 ║   ✅ Personal AI setup (CLAUDE.md)                         ║
 ║   ✅ Built a skill from scratch                            ║
 ║   ✅ MCP tool connections                                  ║
@@ -265,5 +265,5 @@ Thank you for taking this. Seriously. I built it because Claude Code is the most
 - EVERY sentence gets its own line. No walls of text.
 - 2-3 blank lines between SECTIONS. 1 blank line between sentences within a section.
 - Keep energy HIGH but genuinely grateful at the end
-- Gift count is 4 (not 5) — Lesson 3 does not have a downloadable gift file
+- Gift count is 6 total: 30 Prompts (L1), Skill Builder (L2), /mcp-builder (L3), 5 Agent Workflows (L4), Business-in-a-Box (L5), Cheat Sheet (L6)
 - Premium URL is https://noeai.noevarner.com/ — NOT a Circle course link
