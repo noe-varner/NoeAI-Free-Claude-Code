@@ -314,11 +314,9 @@ Say:
 
 And here's the thing — every single one of these will give you **personalized results** because of the CLAUDE.md you just built.
 
-Want to peek at them right now? Just type this:
+Want to see them right now? Just say **"show me the 30 prompts"** and I'll pull them up right here. 😏
 
-`open ~/.noeai/gifts/30-prompts-that-print-money.md`
-
-Or save them for later — they're not going anywhere. 😏
+Or save them for later — they live at `~/.noeai/gifts/` and they're not going anywhere.
 
 
 ## Wrap Up
