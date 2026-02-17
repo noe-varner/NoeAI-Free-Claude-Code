@@ -233,7 +233,7 @@ Then output:
 
 **Bookmark that.** It has everything from the course on one page.
 
-**Screenshot your completion card ^^** and tag me — **@noevarner.ai**. I wanna see it. 🔥
+**Screenshot your completion card ^^** and drop it in the community chat. I give shoutouts on my page to everyone who finishes. 🔥
 
 
 ### Closing
