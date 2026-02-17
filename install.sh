@@ -14,6 +14,41 @@ echo "  NoeAI Free Claude Code"
 echo "  ======================"
 echo ""
 
+# ── Check for Claude Code ────────────────────────────────
+
+if ! command -v claude &> /dev/null; then
+    echo "  Claude Code is not installed yet."
+    echo ""
+    echo "  No worries — here's how to get it (takes 2 minutes):"
+    echo ""
+    echo "  STEP 1: Install Node.js (if you don't have it)"
+    echo "  ───────────────────────────────────────────────"
+    if [[ "$OSTYPE" == "darwin"* ]]; then
+        echo "  Download from: https://nodejs.org"
+        echo "  (Click the big green button, install, done.)"
+    else
+        echo "  Download from: https://nodejs.org"
+        echo "  Or: sudo apt install nodejs npm"
+    fi
+    echo ""
+    echo "  STEP 2: Install Claude Code"
+    echo "  ───────────────────────────"
+    echo "  npm install -g @anthropic-ai/claude-code"
+    echo ""
+    echo "  STEP 3: Run this installer again"
+    echo "  ────────────────────────────────"
+    echo "  curl -fsSL https://raw.githubusercontent.com/${REPO}/main/install.sh | bash"
+    echo ""
+    echo "  ─────────────────────────────────────────────"
+    echo "  Follow @noevarner.ai for setup help"
+    echo "  ─────────────────────────────────────────────"
+    echo ""
+    exit 0
+fi
+
+echo "  ✓ Claude Code detected"
+echo ""
+
 # ── Clone or update the repo ──────────────────────────────
 
 if [ -d "$INSTALL_DIR" ]; then
@@ -39,7 +74,7 @@ for skill_file in "$INSTALL_DIR/skills/"*.md; do
     if [ -f "$skill_file" ]; then
         cp "$skill_file" "$SKILL_DIR/"
         SKILL_NAME=$(basename "$skill_file" .md)
-        echo "    Installed /noeai:${SKILL_NAME}"
+        echo "    ✓ /noeai:${SKILL_NAME}"
         SKILL_COUNT=$((SKILL_COUNT + 1))
     fi
 done
@@ -61,7 +96,6 @@ echo "  ├── Skills → ~/.claude/commands/noeai/"
 echo "  ├── Course → ~/.noeai/course/"
 echo "  ├── Gifts → ~/.noeai/gifts/"
 echo "  ├── CLAUDE.md Templates → ~/.noeai/claude-md-templates/"
-echo "  ├── n8n Workflows → ~/.noeai/n8n-workflows/"
 echo "  └── MCP Server Templates → ~/.noeai/mcp-servers/"
 echo ""
 echo "  NEXT STEPS:"
@@ -73,7 +107,7 @@ echo "  To get updates, just re-run this command."
 echo "  The installer pulls the latest from GitHub automatically."
 echo ""
 echo "  ─────────────────────────────────────────────"
-echo "  Free course + community: https://noevarner.circle.so"
+echo "  Free course + community: https://noeai.circle.so"
 echo "  Follow @noevarner.ai for daily AI tutorials"
 echo "  ─────────────────────────────────────────────"
 echo ""
