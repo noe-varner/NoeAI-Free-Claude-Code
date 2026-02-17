@@ -149,7 +149,7 @@ This works for ANYTHING — landing pages, emails, proposals, dashboards, report
 ## Troubleshooting
 
 **"Command not found" when I type `claude`**
-→ Claude Code isn't installed. Run: `npm install -g @anthropic-ai/claude-code`
+→ Claude Code isn't installed. Run: `curl -fsSL https://claude.ai/install.sh | bash`
 
 **Skills don't show up when I type `/`**
 → Make sure the skill file is at `~/.claude/commands/[name].md`
