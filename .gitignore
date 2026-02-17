@@ -1,0 +1,28 @@
+# Credentials and secrets
+.env
+.env.*
+*.env
+.mcp.json
+credentials*
+*secret*
+*token*
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+venv/
+.venv/
+*.egg-info/
+dist/
+build/
+
+# Node
+node_modules/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
