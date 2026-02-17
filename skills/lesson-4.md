@@ -134,9 +134,9 @@ Now run a multi-agent demo that's relevant to their business. Read their CLAUDE.
 Use the Task tool to spawn 3 agents in parallel. Examples based on their niche:
 
 **If they're in content/marketing:**
-- Agent 1: Research trending topics in their niche
-- Agent 2: Write 3 hook variations for their audience
-- Agent 3: Draft a content outline for their platform
+- Agent 1: Write 3 scroll-stopping hook variations for their audience
+- Agent 2: Draft a content outline for their platform
+- Agent 3: Write a 5-day email nurture sequence for their offer
 
 **If they're a coach/consultant:**
 - Agent 1: Write a lead magnet outline for their niche
@@ -152,15 +152,34 @@ Use the Task tool to spawn 3 agents in parallel. Examples based on their niche:
 
 Spawn 3 agents using the Task tool. Use subagent_type "general-purpose" for each. Make the tasks real and useful — not toy examples.
 
-After all 3 complete, present the results and say:
+**IMPORTANT RULES FOR AGENTS:**
+- **NO MCP tools, NO Apify, NO external integrations.** Users may not have MCP servers installed. WebSearch and WebFetch are OK — those are built-in Claude Code tools that everyone has.
+- Each agent prompt MUST include: "Do NOT use any MCP tools or external integrations (no Apify, no Airtable, no external APIs). You may use WebSearch if needed. Write using Claude's built-in capabilities only."
+- Each agent prompt MUST include: "Write your complete output as plain text. Return the full result — not a summary."
+
+**IMPORTANT — SAVE RESULTS TO FILES:**
+After all 3 agents complete, save each agent's output to a separate file so the user can SEE the actual work product:
+
+1. Save Agent 1's output to `./agent-1-[short-name].md` (e.g. `./agent-1-hooks.md`)
+2. Save Agent 2's output to `./agent-2-[short-name].md` (e.g. `./agent-2-outline.md`)
+3. Save Agent 3's output to `./agent-3-[short-name].md` (e.g. `./agent-3-emails.md`)
+
+Then open all 3 files so the user can click through them:
+```bash
+open ./agent-1-[name].md && open ./agent-2-[name].md && open ./agent-3-[name].md
+```
+
+After saving and opening the files, say:
 
 **Did you see that?** 👀
 
 **THREE agents. Working at the same time. Each with a different job.**
 
-Agent 1 did [task]. Agent 2 did [task]. Agent 3 did [task].
+**I just saved all 3 results AND opened them for you.** Check your screen — you should see 3 files. 📄📄📄
 
-**All simultaneously.**
+Agent 1 wrote [task]. Agent 2 wrote [task]. Agent 3 wrote [task].
+
+**All simultaneously. All saved. All yours.**
 
 If you'd done this one at a time, it would've taken 3x as long.
 
@@ -220,9 +239,18 @@ If they pick a number, use the corresponding option. If they type their own idea
 
 If they picked a number, ask them for the specific details needed (e.g. "What topic?" for Content Blitz, "What product/offer?" for Ad Copy Lab, "Which 3 competitors?" for Competitor Breakdown). Keep it to ONE quick follow-up question, then go.
 
-Spawn agents based on what they chose. Use the Task tool with subagent_type "general-purpose". Run them in parallel. Present the results when all agents complete.
+Spawn agents based on what they chose. Use the Task tool with subagent_type "general-purpose". Run them in parallel.
 
-After delivering, say:
+**IMPORTANT RULES FOR AGENTS:**
+- **NO web searches, NO MCP tools, NO Apify, NO WebSearch, NO WebFetch.** Agents must use ONLY pure Claude writing ability.
+- Each agent prompt MUST include: "Do NOT use any MCP tools or external integrations (no Apify, no Airtable, no external APIs). You may use WebSearch if needed. Write using Claude's built-in capabilities only."
+- Each agent prompt MUST include: "Write your complete output as plain text. Return the full result — not a summary."
+
+**SAVE RESULTS TO FILES** after all agents complete — same pattern as the demo:
+1. Save each agent's output to `./agent-1-[name].md`, `./agent-2-[name].md`, `./agent-3-[name].md`
+2. Open all 3 files so the user can see the deliverables
+
+After saving and opening, say:
 
 **There it is.** 💥
 
@@ -352,6 +380,8 @@ Do NOT invoke lesson-5 for them. They type it themselves.
 - The demo MUST use the Task tool to spawn real parallel agents — not simulated. They should SEE agents spin up.
 - Their hands-on prompt MUST also spawn real agents — not fake it
 - Use subagent_type "general-purpose" for all spawned agents
+- **AGENTS MUST NOT use Apify or ANY MCP tools.** Users may not have MCP servers installed. WebSearch and WebFetch are fine — those are built-in.
+- **ALWAYS save agent results to files** (`./agent-1-[name].md`, etc.) and open them so the user sees real deliverables — not just a summary in chat.
 - EVERY sentence gets its own line. No walls of text.
 - 2-3 blank lines between SECTIONS. 1 blank line between sentences within a section.
 - Keep energy HIGH. The reaction should be "wait... that just happened??"
