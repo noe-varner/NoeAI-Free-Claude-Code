@@ -400,7 +400,7 @@ Say:
 
 These are the prompts I wish I had when I started. They would've saved me WEEKS.
 
-Want to peek? Type: `open ~/.noeai/gifts/business-in-a-box.md`
+Want to see them? Just say **"show me the business-in-a-box prompts"** and I'll pull them up right here.
 
 Or save them for later — they'll be there when you need them.
 
