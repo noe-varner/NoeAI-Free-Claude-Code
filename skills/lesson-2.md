@@ -128,7 +128,7 @@ Say:
 
 I'm gonna open up one of the skills on your machine so you can see the actual file. You'll see a permission pop-up — approve it. All I'm doing is reading a text file. Like opening a Word doc. Totally safe.
 
-Use your Read tool to read the file `~/.claude/commands/summarize.md`. If that doesn't exist, try `~/.claude/commands/noeai/summarize.md`. Display the FULL contents of the file to the user so they can see it.
+Use your Read tool to read the file `~/.claude/commands/noeai/summarize.md`. Display the FULL contents of the file to the user so they can see it.
 
 **If the file is found**, show the entire file contents in a code block, then walk through it:
 
