@@ -310,12 +310,12 @@ Then output:
 ```
 ╔═══════════════════════════════════════════════════════════╗
 ║                                                           ║
-║   UP NEXT: LESSON 5                        ║
-║   Build Something Real                                         ║
+║   UP NEXT: LESSON 5                                       ║
+║   Build Something Real                                    ║
 ║                                                           ║
-║   Claude builds your dream project. For real.     ║
-║   Describe anything and Claude builds it.                           ║
-║   This is where it all comes together.               ║
+║   Claude builds your dream project. For real.             ║
+║   Describe anything and Claude builds it.                 ║
+║   This is where it all comes together.                    ║
 ║                                                           ║
 ╚═══════════════════════════════════════════════════════════╝
 ```
