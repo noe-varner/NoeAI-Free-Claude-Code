@@ -15,24 +15,37 @@ Write-Host ""
 
 $claudePath = Get-Command claude -ErrorAction SilentlyContinue
 if (-not $claudePath) {
-    Write-Host "  Claude Code is not installed yet."
-    Write-Host ""
-    Write-Host "  Copy and paste this into PowerShell to install it:"
-    Write-Host ""
-    Write-Host "    irm https://claude.ai/install.ps1 | iex"
-    Write-Host ""
-    Write-Host "  Then run this installer again:"
-    Write-Host ""
-    Write-Host "    irm https://raw.githubusercontent.com/$REPO/main/install.ps1 | iex"
-    Write-Host ""
-    Write-Host "  -----------------------------------------"
-    Write-Host "  Need help? Follow @noevarner.ai"
-    Write-Host "  -----------------------------------------"
-    Write-Host ""
-    return
+    # Check default install location (often not in PATH yet)
+    $defaultPath = "$env:USERPROFILE\.local\bin"
+    if (Test-Path "$defaultPath\claude.exe") {
+        # Add to PATH for this session so it works immediately
+        $env:PATH = "$defaultPath;$env:PATH"
+        Write-Host "  OK Claude Code found at $defaultPath"
+        Write-Host "  (Added to PATH for this session)"
+        Write-Host ""
+        Write-Host "  TIP: To make this permanent, run this once:"
+        Write-Host "    [Environment]::SetEnvironmentVariable('PATH', `"$defaultPath;`" + [Environment]::GetEnvironmentVariable('PATH', 'User'), 'User')"
+        Write-Host ""
+    } else {
+        Write-Host "  Claude Code is not installed yet."
+        Write-Host ""
+        Write-Host "  Copy and paste this into PowerShell to install it:"
+        Write-Host ""
+        Write-Host "    irm https://claude.ai/install.ps1 | iex"
+        Write-Host ""
+        Write-Host "  Then run this installer again:"
+        Write-Host ""
+        Write-Host "    irm https://raw.githubusercontent.com/$REPO/main/install.ps1 | iex"
+        Write-Host ""
+        Write-Host "  -----------------------------------------"
+        Write-Host "  Need help? Follow @noevarner.ai"
+        Write-Host "  -----------------------------------------"
+        Write-Host ""
+        return
+    }
+} else {
+    Write-Host "  OK Claude Code detected"
 }
-
-Write-Host "  OK Claude Code detected"
 Write-Host ""
 
 # -- Check for git --
