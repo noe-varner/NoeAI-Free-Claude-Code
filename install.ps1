@@ -1,8 +1,6 @@
 # NoeAI Free Claude Code — One-Command Installer (Windows)
 # Installs free skills, templates, and resources
 
-$ErrorActionPreference = "Stop"
-
 $REPO = "noe-varner/NoeAI-Free-Claude-Code"
 $REPO_URL = "https://github.com/$REPO.git"
 $INSTALL_DIR = "$env:USERPROFILE\.noeai"
@@ -31,7 +29,7 @@ if (-not $claudePath) {
     Write-Host "  Need help? Follow @noevarner.ai"
     Write-Host "  -----------------------------------------"
     Write-Host ""
-    exit 0
+    return
 }
 
 Write-Host "  OK Claude Code detected"
@@ -46,21 +44,27 @@ if (-not $gitPath) {
     Write-Host "  Download it from: https://git-scm.com/download/win"
     Write-Host "  Then run this installer again."
     Write-Host ""
-    exit 0
+    return
 }
 
 # -- Clone or update the repo --
 
-if (Test-Path $INSTALL_DIR) {
-    Write-Host "  Updating existing installation..."
-    Push-Location $INSTALL_DIR
-    git pull --quiet origin main
-    Pop-Location
-    Write-Host "  Updated to latest version."
-} else {
-    Write-Host "  Downloading NoeAI Free Claude Code..."
-    git clone --quiet $REPO_URL $INSTALL_DIR
-    Write-Host "  Downloaded."
+try {
+    if (Test-Path $INSTALL_DIR) {
+        Write-Host "  Updating existing installation..."
+        Push-Location $INSTALL_DIR
+        git pull --quiet origin main 2>$null
+        Pop-Location
+        Write-Host "  Updated to latest version."
+    } else {
+        Write-Host "  Downloading NoeAI Free Claude Code..."
+        git clone --quiet $REPO_URL $INSTALL_DIR 2>$null
+        Write-Host "  Downloaded."
+    }
+} catch {
+    Write-Host "  Error downloading. Check your internet connection and try again."
+    Write-Host ""
+    return
 }
 
 Write-Host ""
