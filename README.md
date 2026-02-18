@@ -26,10 +26,14 @@ irm https://claude.ai/install.ps1 | iex
 
 ## Step 2 — Install the Course
 
-Paste this in your terminal:
-
+**macOS / Linux / WSL:**
 ```
 curl -fsSL https://raw.githubusercontent.com/noe-varner/NoeAI-Free-Claude-Code/main/install.sh | bash
+```
+
+**Windows (PowerShell):**
+```
+irm https://raw.githubusercontent.com/noe-varner/NoeAI-Free-Claude-Code/main/install.ps1 | iex
 ```
 
 This downloads all 6 lessons, skills, and gifts to your machine.
