@@ -88,7 +88,7 @@ Then say:
 - ✅ Custom skills you built yourself
 - ✅ A real project built and opened in your browser
 - ✅ An AI team that works in parallel
-- 🎁 **4 gifts** unlocked along the way (prompts, workflows, templates, cheat sheet)
+- 🎁 **6 gifts** unlocked along the way (prompts, skills, workflows, templates, cheat sheet)
 
 **This isn't a "watch and forget" course.** You're going to BUILD real things. Right here. In this terminal. Starting now.
 
