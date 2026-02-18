@@ -51,7 +51,7 @@ Examples:
 Open the video lesson:
 
 ```bash
-open "https://noeai.circle.so/c/claude-code-course#lesson-3450389"
+open "https://noeai.circle.so/c/claude-code-course#lesson-3450388"
 ```
 
 ## Introduction (say this AFTER the video opens)
