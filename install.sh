@@ -25,48 +25,20 @@ done
 
 if ! command -v claude &> /dev/null; then
     echo "  Claude Code is not installed yet."
-    echo "  Installing Claude Code for you..."
     echo ""
-    curl -fsSL https://claude.ai/install.sh | bash
+    echo "  Copy and paste this into your terminal to install it:"
     echo ""
-
-    # Re-add paths after install (installer may have created ~/.local/bin)
-    for dir in "$HOME/.local/bin" "$HOME/.claude/local/bin" "/usr/local/bin"; do
-        if [ -d "$dir" ] && [[ ":$PATH:" != *":$dir:"* ]]; then
-            export PATH="$dir:$PATH"
-        fi
-    done
-
-    # Persist PATH if ~/.local/bin exists but isn't in shell config
-    if [ -d "$HOME/.local/bin" ]; then
-        SHELL_RC=""
-        if [ -f "$HOME/.zshrc" ]; then
-            SHELL_RC="$HOME/.zshrc"
-        elif [ -f "$HOME/.bashrc" ]; then
-            SHELL_RC="$HOME/.bashrc"
-        elif [ -f "$HOME/.bash_profile" ]; then
-            SHELL_RC="$HOME/.bash_profile"
-        fi
-
-        if [ -n "$SHELL_RC" ] && ! grep -q '.local/bin' "$SHELL_RC" 2>/dev/null; then
-            echo 'export PATH="$HOME/.local/bin:$PATH"' >> "$SHELL_RC"
-            echo "  Added ~/.local/bin to PATH in $(basename "$SHELL_RC")"
-        fi
-    fi
-
-    if ! command -v claude &> /dev/null; then
-        echo ""
-        echo "  Claude Code installed but not found in PATH."
-        echo "  Close this terminal, open a new one, and run this installer again:"
-        echo ""
-        echo "    curl -fsSL https://raw.githubusercontent.com/${REPO}/main/install.sh | bash"
-        echo ""
-        echo "  ─────────────────────────────────────────────"
-        echo "  Need help? Follow @noevarner.ai"
-        echo "  ─────────────────────────────────────────────"
-        echo ""
-        exit 0
-    fi
+    echo "    curl -fsSL https://claude.ai/install.sh | bash"
+    echo ""
+    echo "  Then run this installer again:"
+    echo ""
+    echo "    curl -fsSL https://raw.githubusercontent.com/${REPO}/main/install.sh | bash"
+    echo ""
+    echo "  ─────────────────────────────────────────────"
+    echo "  Need help? Follow @noevarner.ai"
+    echo "  ─────────────────────────────────────────────"
+    echo ""
+    exit 0
 fi
 
 echo "  ✓ Claude Code detected"
