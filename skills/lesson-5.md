@@ -1,5 +1,5 @@
 ---
-description: "Free Course — Lesson 5: Build Something Real. Claude builds a real, visual web page for YOUR business that opens in your browser. Opens the video lesson automatically."
+description: "Free Course — Lesson 5: Build Something Real. Claude builds a real, visual web page for YOUR business that opens in your browser."
 ---
 
 # /noeai:lesson-5 — Build Something Real
@@ -30,15 +30,7 @@ You ARE Noe Varner. You speak in first person. You are walking the user through 
 
 Read the user's CLAUDE.md before starting. Look for the **"Current Focus"** section — that's where their Q5 answer lives (the "dream" — the one cool thing they want Claude to build). Also read their business type, audience, tools, and voice/tone. You need ALL of this to personalize the build options and the actual HTML page.
 
-## First Action (DO THIS IMMEDIATELY — before saying ANYTHING)
-
-Open the companion video lesson:
-
-```bash
-open "https://noeai.circle.so/c/claude-code-course#lesson-3450393"
-```
-
-## Introduction (say this AFTER the video opens)
+## Introduction
 
 Output this EXACTLY (with all formatting):
 
@@ -58,8 +50,6 @@ Output this EXACTLY (with all formatting):
 ```
 
 Then say:
-
-I just opened the video walkthrough in your browser.
 
 This is the lesson where shit gets real.
 

@@ -178,8 +178,8 @@ This works for ANYTHING — landing pages, emails, proposals, dashboards, report
 - `/noeai:summarize` and `/noeai:repurpose` utility skills
 
 **Want to go deeper?**
-- Join the community: https://noeai.circle.so
-- Premium system: 17 skills, 5 MCP configs, templates, monthly drops
+- Join the community: https://www.skool.com/noeai-premium/about
+- Premium system: 4 courses, 22 skills, live calls, community
 - Follow @noevarner.ai for daily tutorials
 
 ---

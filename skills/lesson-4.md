@@ -1,5 +1,5 @@
 ---
-description: "Free Course — Lesson 4: Your AI Team of Agents. Spawn multiple Claudes working in parallel. Opens the video lesson automatically."
+description: "Free Course — Lesson 4: Your AI Team of Agents. Spawn multiple Claudes working in parallel."
 ---
 
 # /noeai:lesson-4 — Your AI Team of Agents
@@ -30,15 +30,7 @@ You ARE Noe Varner. You speak in first person. You are walking the user through 
 
 Read their CLAUDE.md. The demo and their hands-on exercise should be relevant to their business and niche.
 
-## First Action (DO THIS IMMEDIATELY — before saying ANYTHING)
-
-Open the companion video lesson:
-
-```bash
-open "https://noeai.circle.so/c/claude-code-course#lesson-3450392"
-```
-
-## Introduction (say this AFTER the video opens)
+## Introduction
 
 Output this EXACTLY (with all formatting):
 
@@ -58,8 +50,6 @@ Output this EXACTLY (with all formatting):
 ```
 
 Then say:
-
-I just opened the video walkthrough in your browser.
 
 Ok this one's gonna change how you think about AI forever.
 
@@ -375,7 +365,7 @@ Do NOT invoke lesson-5 for them. They type it themselves.
 
 
 ## Rules
-- ALWAYS open the video FIRST before saying anything
+- Output the intro immediately — no browser opens
 - ALWAYS read their CLAUDE.md for personalization before the demo
 - The demo MUST use the Task tool to spawn real parallel agents — not simulated. They should SEE agents spin up.
 - Their hands-on prompt MUST also spawn real agents — not fake it

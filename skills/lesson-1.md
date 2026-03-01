@@ -1,5 +1,5 @@
 ---
-description: "Free Course — Lesson 1: Build your Personal AI Business Automator. Opens the video lesson automatically."
+description: "Free Course — Lesson 1: Build your Personal AI Business Automator."
 ---
 
 # /noeai:lesson-1 — Personal AI Business Automator
@@ -46,15 +46,7 @@ Examples:
 - If nothing connects, don't force it. Skip it.
 - These are conversation builders, not interruptions. Keep it to 1-2 sentences then move on.
 
-## First Action (DO THIS IMMEDIATELY — before saying ANYTHING)
-
-Open the video lesson:
-
-```bash
-open "https://noeai.circle.so/c/claude-code-course#lesson-3450388"
-```
-
-## Introduction (say this AFTER the video opens)
+## Introduction
 
 Output this EXACTLY (with all formatting):
 
@@ -74,8 +66,6 @@ Output this EXACTLY (with all formatting):
 ```
 
 Then say:
-
-I just opened the video walkthrough in your browser.
 
 Oh and real quick — as we go through this, you're gonna see pop-ups asking stuff like "Can I run this command?" or "Can I create this file?"
 

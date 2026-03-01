@@ -99,6 +99,6 @@ Pre-built slash commands you can use anytime:
 
 ## Stay Connected
 
-- **Community:** [NoeAI Circle](https://noeai.circle.so) — free course, resources, weekly drops
+- **Community:** [NoeAI Premium](https://www.skool.com/noeai-premium/about) — courses, skills, live calls, community
 - **Instagram:** [@noevarner.ai](https://instagram.com/noevarner.ai) — daily AI tutorials
 - **GitHub:** [noe-varner](https://github.com/noe-varner) — open source tools
